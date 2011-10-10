@@ -1,0 +1,12 @@
+set history=1000
+set smarttab
+let g:NERDTreeWinSize = 48 
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set visualbell
+set textwidth=0
+set wrapmargin=0
+let mapleader=","
+au BufNewFile,BufRead *.less set filetype=less

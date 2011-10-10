@@ -1,0 +1,19 @@
+[user]
+	name = Tim Child
+	email = tim@timc3.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	excludesfile = /Users/tim/.gitignore
+    editor = /usr/bin/vim
+
+[alias]
+    co = checkout
+    st = status
+
+[url "git@github.com:"]
+    insteadOf = "gh:"
+    pushInsteadOf = "github:"
+    pushInsteadOf = "git://github.com/"
