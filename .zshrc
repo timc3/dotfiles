@@ -20,24 +20,20 @@ ZSH_THEME="oh-matron"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-#Shortcuts for navigation
-export sp=/Users/tim/Documents/Work/Cantemo/ScratchPad
-export po=/Users/tim/Cantemo/development/Portal/code/trunk
-
 export SVN_EDITOR=vim
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-#
 PATH="/django/django_src/django/bin/:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/subversion/bin:$PATH:/usr/local/mysql/bin/:/opt/homebrew/bin/:/opt/homebrew/sbin:/Developer/usr/bin/:/Users/tim/Cantemo/development/Portal/code/trunk/"
 export PATH
-export sdel=/Users/tim/Documents/SiteDesign/Elementar
-export CantemoSoftwareLocation=/Users/tim/Dropbox/CantemoSoftware
-export VMWareMachinesLocation="/Volumes/MacHD2/Documents/Virtual Machines/"
+
+# Private includes
+if [[ -r ~/.privateinclude ]]; then
+     source ~/.privateinclude
+fi
