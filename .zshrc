@@ -21,7 +21,7 @@ ZSH_THEME="oh-matron"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
-
+export git=/usr/local/git/bin/git
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
@@ -30,9 +30,8 @@ export SVN_EDITOR=vim
 
 source $ZSH/oh-my-zsh.sh
 
-PATH="/django/django_src/django/bin/:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/subversion/bin:$PATH:/usr/local/mysql/bin/:/opt/homebrew/bin/:/opt/homebrew/sbin:/Developer/usr/bin/:/Users/tim/Cantemo/development/Portal/code/trunk/"
+PATH="/usr/local/git/bin:/django/django_src/django/bin/:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/subversion/bin:$PATH:/usr/local/mysql/bin/:/opt/homebrew/bin/:/opt/homebrew/sbin:/Developer/usr/bin/:/Users/tim/Cantemo/development/Portal/code/trunk/"
 export PATH
-
 # Private includes
 if [[ -r ~/.privateinclude ]]; then
      source ~/.privateinclude
