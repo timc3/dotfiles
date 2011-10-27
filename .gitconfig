@@ -1,6 +1,6 @@
 [user]
 	name = Tim Child
-	email = tim@timc3.com
+	email = tim@cantemo.com
 [color]
 	diff = auto
 	status = auto
@@ -17,3 +17,9 @@
     insteadOf = "gh:"
     pushInsteadOf = "github:"
     pushInsteadOf = "git://github.com/"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
