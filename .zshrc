@@ -27,7 +27,7 @@ export git=/usr/local/git/bin/git
 plugins=(git)
 
 export SVN_EDITOR=vim
-
+export EDITOR=vim
 source $ZSH/oh-my-zsh.sh
 
 PATH="/usr/local/git/bin:/django/django_src/django/bin/:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/subversion/bin:$PATH:/usr/local/mysql/bin/:/opt/homebrew/bin/:/opt/homebrew/sbin:/Developer/usr/bin/:/Users/tim/Cantemo/development/Portal/code/trunk/"
