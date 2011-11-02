@@ -9,6 +9,7 @@ set visualbell
 set textwidth=0
 set wrapmargin=0
 let mapleader=","
+set tw=0
 
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.js set filetype=javascript.javascript-jquery
