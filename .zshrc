@@ -24,7 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 export git=/usr/local/git/bin/git
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git, django, brew, github, ssh-agent)
 
 export SVN_EDITOR=vim
 export EDITOR=vim
