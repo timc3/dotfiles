@@ -4,15 +4,15 @@
 [color]
 	diff = auto
 	status = auto
-	branch = auto
+    branch = auto
+    ui = true
 [core]
 	excludesfile = /Users/tim/.gitignore
     editor = /usr/bin/vim
-
 [alias]
     co = checkout
     st = status
-
+    ll = log --pretty=oneline --abbrev-commit --graph --decorate
 [url "git@github.com:"]
     insteadOf = "gh:"
     pushInsteadOf = "github:"
