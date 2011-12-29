@@ -28,6 +28,10 @@ plugins=(git django brew github ssh-agent)
 
 export SVN_EDITOR=vim
 export EDITOR=vim
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_LOG_DIR="$WORKON_HOME"
+export VIRTUALENVWRAPPER_HOOK_DIR="$WORKON_HOME"
+source /usr/local/bin/virtualenvwrapper.sh
 source $ZSH/oh-my-zsh.sh
 
 PATH="/usr/local/git/bin:/django/django_src/django/bin/:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/subversion/bin:$PATH:/usr/local/mysql/bin/:/opt/homebrew/bin/:/opt/homebrew/sbin:/Developer/usr/bin/:/Users/tim/Cantemo/development/Portal/code/trunk/"
