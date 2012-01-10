@@ -7,4 +7,6 @@ To setup::
     cd .dotfiles/files/
     ruby install.rb
 
-This should symlink the files into your home directory and then you can use them
+This should symlink the files into your home directory and then you can use them.
+
+There is also a requirements.pip for installing requirements. Pip is added so we can easily do an upgrade.

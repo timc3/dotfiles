@@ -1,0 +1,7 @@
+virtualenv
+virtualenvwrapper
+pip
+fabric
+ipython
+ipdb
+simplejson
