@@ -1,2 +1,3 @@
 files/bip/logs/*
 files/bip/bip.conf
+files/bip/bip.pid
