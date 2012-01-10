@@ -1,10 +1,15 @@
+# This configuration file assumes that you have the following installed:
+#  - Git
+#  - django
+#  - brew (though it might work without it).
+#  - virtualenv
+#  - virtualenvwrapper
+#
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Looks in ~/.oh-my-zsh/themes/
 ZSH_THEME="oh-matron"
 
 # Set to this to use case-sensitive completion
@@ -34,9 +39,9 @@ export VIRTUALENVWRAPPER_HOOK_DIR="$WORKON_HOME"
 source /usr/local/bin/virtualenvwrapper.sh
 source $ZSH/oh-my-zsh.sh
 export VIRTUAL_ENV_DISABLE_PROMPT="True"
-PATH="/usr/local/git/bin:/django/django_src/django/bin/:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/subversion/bin:$PATH:/usr/local/mysql/bin/:/opt/homebrew/bin/:/opt/homebrew/sbin:/Developer/usr/bin/:/Users/tim/Cantemo/development/Portal/code/trunk/"
-export PATH
-# Private includes
+#PATH="/usr/local/git/bin:/django/django_src/django/bin/:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/subversion/bin:$PATH:/usr/local/mysql/bin/:/opt/homebrew/bin/:/opt/homebrew/sbin:/Developer/usr/bin/:/Users/tim/Cantemo/development/Portal/code/trunk/"
+#export PATH
+# Private includes (which should include your ath)
 if [[ -r ~/.privateinclude ]]; then
      source ~/.privateinclude
 fi
