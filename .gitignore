@@ -7,3 +7,4 @@
 !.janus.rake
 !.gitignore
 !.codeintel
+!.buildit.rb
