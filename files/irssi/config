@@ -274,4 +274,9 @@ statusbar = {
 settings = {
   core = { real_name = "Tim Child"; user_name = "tim"; nick = "timc3"; };
   "fe-text" = { actlist_sort = "refnum"; };
+  "fe-common/core" = {
+    bell_beeps = "yes";
+    beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
+    theme = "elite";
+  };
 };
