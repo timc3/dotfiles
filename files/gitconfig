@@ -7,7 +7,7 @@
     branch = auto
     ui = true
 [core]
-	excludesfile = /Users/tim/.gitignore
+	excludesfile = /Users/tim/.gitignore_global
     editor = /usr/bin/vim
 [alias]
     co = checkout
