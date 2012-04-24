@@ -17,7 +17,7 @@ Setup
 To setup, run the following from a terminal::
 
     mkdir ~/.dotfiles
-    git clone git@github.com:timc3/dotfiles.git .dotfiles
+    git clone git://github.com/timc3/dotfiles.git .dotfiles
     cd .dotfiles/files/
     ruby install.rb
 
