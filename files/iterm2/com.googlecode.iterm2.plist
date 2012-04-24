@@ -538,7 +538,7 @@
 	<key>NSWindow Frame com.apple.typography_panel_Monaco</key>
 	<string>387 691 260 88 0 0 1600 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1050 0 0 1680 1028 </string>
+	<string>0 0 1600 1200 0 0 1600 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>229 96 585 451 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_BD82819F-A8FE-4DA1-AC11-4A01273B07FC</key>
@@ -2591,7 +2591,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2012-03-29T12:56:00Z</date>
+	<date>2012-04-03T22:44:47Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2621,6 +2621,7 @@
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Notes</string>
+		<string>Paste History</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
