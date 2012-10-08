@@ -5,11 +5,15 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set autoindent
 set visualbell
 set textwidth=0
 set wrapmargin=0
 let mapleader=","
 set tw=0
+filetype indent on
+filetype on
+filetype plugin on
 
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.js set filetype=javascript.javascript-jquery
