@@ -33,6 +33,19 @@ To setup iterm2, open the preferences, check "Load preferences from a user-defin
 
     /Users/tim/.iterm2/
 
+VIM
+----
+
+I have removed Janus because now that I am using VIM much more it just gets in the way. A standard VIM installation with some carefully picked plugins is what I am going to go for. My VIMRC will be mainly configured for Python support.
+
+ - Pathogen for plugin support
+ - Fugitive for git support
+
+
+To install VIM plugins::
+
+   git submodule add git://github.com/tpope/vim-fugitive.git files/vim/bundle/fugitive.vim
+
 ToDo
 ----
 
