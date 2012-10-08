@@ -8,7 +8,6 @@ python
 ruby
 iterm2 (Mac only)
 git (obviously)
-Janus - Use my clone of it.
 oh-my-zsh - again use my clone of it.
 
 Setup
