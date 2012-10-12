@@ -10,3 +10,12 @@
 [submodule "files/vim/bundle/nerdtree.vim"]
 	path = files/vim/bundle/nerdtree.vim
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "files/vim/bundle/ctrlp.vim"]
+	path = files/vim/bundle/ctrlp.vim
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "files/vim/bundle/vim-sparkup"]
+	path = files/vim/bundle/vim-sparkup
+	url = http://github.com/bingaman/vim-sparkup.git
+[submodule "files/vim/bundle/vim-project"]
+	path = files/vim/bundle/vim-project
+	url = git://github.com/vim-scripts/project.vim
