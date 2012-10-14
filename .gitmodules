@@ -16,6 +16,3 @@
 [submodule "files/vim/bundle/vim-sparkup"]
 	path = files/vim/bundle/vim-sparkup
 	url = http://github.com/bingaman/vim-sparkup.git
-[submodule "files/vim/bundle/vim-project"]
-	path = files/vim/bundle/vim-project
-	url = git://github.com/vim-scripts/project.vim

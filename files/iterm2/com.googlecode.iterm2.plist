@@ -538,7 +538,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1091 77 443 270 0 0 1600 1178 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>944 503 924 485 0 0 2560 1418 </string>
+	<string>944 503 605 485 0 0 2560 1440 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>608 787 384 129 0 0 1600 1178 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Monaco</key>
@@ -547,6 +547,8 @@
 	<string>0 0 2560 1440 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>229 96 585 451 0 0 1680 1028 </string>
+	<key>NeverWarnAboutShortLivedSessions_0E905248-8510-47EA-8F3C-DF2A7905AF96</key>
+	<true/>
 	<key>NeverWarnAboutShortLivedSessions_BD82819F-A8FE-4DA1-AC11-4A01273B07FC</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -2607,7 +2609,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2012-07-31T13:14:08Z</date>
+	<date>2012-10-09T16:02:29Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
