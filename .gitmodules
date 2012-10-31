@@ -16,3 +16,6 @@
 [submodule "files/vim/bundle/vim-sparkup"]
 	path = files/vim/bundle/vim-sparkup
 	url = http://github.com/bingaman/vim-sparkup.git
+[submodule "files/vim/bundle/vim-less"]
+	path = files/vim/bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git

@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/tim/.vim'
+let g:netrw_dirhist_2='/Users/tim/Cantemo/cantemo/site-html2012'
+let g:netrw_dirhist_3='/Users/tim/Cantemo/portal/src'
+let g:netrw_dirhist_4='/Users/tim/Cantemo/cantemo'
