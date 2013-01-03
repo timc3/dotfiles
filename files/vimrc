@@ -14,7 +14,8 @@
 " git submodule add git://github.com/honza/snipmate-snippets.git files/vim/bundle/snipmate-snippets
 " git submodule add git://github.com/garbas/vim-snipmate.git files/vim/bundle/vim-snipmate
 " git submodule add git://github.com/jmcantrell/vim-virtualenv.git files/vim/bundle/vim-virtualenv 
-" git submodule add git://github.com/vim-scripts/taglist.vim.git files/vim/bundle/taglist
+" git submodule add git://github.com/majutsushi/tagbar.git files/vim/bundle/tagbar
+" git submodule add git://github.com/scrooloose/syntastic.git files/vim/bundle/syntastic
 "
 " Start Pathogen
 call pathogen#infect()
@@ -148,5 +149,9 @@ nmap <leader>n :NERDTreeToggle<cr>
 "" ctags
 """""""""""""""""""""""""""""""""""""""""""""""""""
 if filereadable(expand("/opt/homebrew/bin//ctags")) 
-    let $Tlist_Ctags_Cmd=expand("/opt/homebrew/bin//ctags")
+    let Tlist_Ctags_Cmd=expand("/opt/homebrew/bin//ctags")
+    let g:tagbar_ctags_bin=expand("/opt/homebrew/bin//ctags")
 endif
+
+set tags=./tags,$VIRTUAL_ENV/tags;/
+
