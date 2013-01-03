@@ -9,6 +9,7 @@ ruby
 iterm2 (Mac only)
 git (obviously)
 oh-my-zsh - again use my clone of it.
+ctags - brew install ctags on osx
 
 Setup
 -----
@@ -40,13 +41,12 @@ I have removed Janus because now that I am using VIM much more it just gets in t
 
  - Pathogen for plugin support
  - Fugitive for git support
+ - Ex. ctags for taglist support.
 
 
-To install VIM plugins::
+To install VIM plugins, do it like this in the files bundle area::
 
    git submodule add git://github.com/tpope/vim-fugitive.git files/vim/bundle/fugitive.vim
 
-ToDo
-----
+This will mean that once in a while we can manually pull in the updates from the various git repos for the plugins that we use.
 
-SublimeText 2 configuration

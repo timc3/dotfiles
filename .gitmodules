@@ -37,6 +37,3 @@
 [submodule "files/vim/bundle/vim-virtualenv"]
 	path = files/vim/bundle/vim-virtualenv
 	url = git://github.com/jmcantrell/vim-virtualenv.git
-[submodule "files/vim/bundle/taglist"]
-	path = files/vim/bundle/taglist
-	url = git://github.com/vim-scripts/taglist.vim.git
