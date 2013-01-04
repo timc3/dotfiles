@@ -10,6 +10,7 @@ iterm2 (Mac only)
 git (obviously)
 oh-my-zsh - again use my clone of it.
 ctags - brew install ctags on osx
+jedi - Python library for autocomplete
 
 Setup
 -----

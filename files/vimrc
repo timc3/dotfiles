@@ -93,6 +93,10 @@ set tw=0
 "imap <left> <nop>
 "imap <right> <nop>
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
@@ -137,6 +141,13 @@ au BufNewFile,BufRead *.js set filetype=javascript.javascript-jquery
 au BufNewFile,BufRead *.html set filetype=htmldjango.html.javascript.javascript-jquery
 au BufNewFile,BufRead *.py set filetype=python.django
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown,ctp set omnifunc=htmlcomplete#CompleteTags
+
+" let g:syntastic_python_checker = 'pyflakes'
+let g:jedi#related_names_command = "<leader>r"
 
 " NERDTree setup
 " Fix the width of NERDTree.

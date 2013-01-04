@@ -46,3 +46,6 @@
 [submodule "files/vim/bundle/syntastic"]
 	path = files/vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "files/vim/bundle/jedi-vim"]
+	path = files/vim/bundle/jedi-vim
+	url = git://github.com/davidhalter/jedi-vim.git
