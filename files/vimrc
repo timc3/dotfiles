@@ -16,6 +16,8 @@
 " git submodule add git://github.com/jmcantrell/vim-virtualenv.git files/vim/bundle/vim-virtualenv 
 " git submodule add git://github.com/majutsushi/tagbar.git files/vim/bundle/tagbar
 " git submodule add git://github.com/scrooloose/syntastic.git files/vim/bundle/syntastic
+" git submodule add git://github.com/davidhalter/jedi-vim.git files/vim/bundle/jedi-vim
+" git submodule add git://github.com/xolox/vim-session.git files/vim/bundle/vim-session
 "
 " Start Pathogen
 call pathogen#infect()
@@ -93,9 +95,9 @@ set tw=0
 "imap <left> <nop>
 "imap <right> <nop>
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -115,7 +117,8 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
-
+set foldmethod=indent
+set foldlevelstart=20
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors
@@ -129,24 +132,39 @@ if has("gui_running")
 endif
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Files
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Swap files create in temporary directories instead of the local directory
-set backup 
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
-set backupskip=/tmp/*,/private/tmp/* 
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
-set writebackup
+" set backup 
+" set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
+" set backupskip=/tmp/*,/private/tmp/* 
+" set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
+" set writebackup
+set noswapfile
+set nobackup
 
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.js set filetype=javascript.javascript-jquery
 au BufNewFile,BufRead *.html set filetype=htmldjango.html.javascript.javascript-jquery
 au BufNewFile,BufRead *.py set filetype=python.django
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+" No wrapping for python
+autocmd FileType python setlocal nowrap
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" Coffeescript and Javascript I want at 2 space indentation
+autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2 tabstop=4
+autocmd FileType coffee setlocal softtabstop=2 shiftwidth=2 tabstop=4
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown,ctp set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType rst setlocal spell spelllang=en_gb
 
 " let g:syntastic_python_checker = 'pyflakes'
+let g:syntastic_mode_map = {'mode': 'active', 
+            \ 'active_filetypes': [], 
+            \ 'passive_filetypes': ['html'] }
+        
 let g:jedi#related_names_command = "<leader>r"
 
 " NERDTree setup
