@@ -15,6 +15,7 @@
 " git submodule add git://github.com/garbas/vim-snipmate.git files/vim/bundle/vim-snipmate
 " git submodule add git://github.com/jmcantrell/vim-virtualenv.git files/vim/bundle/vim-virtualenv 
 " git submodule add git://github.com/majutsushi/tagbar.git files/vim/bundle/tagbar
+" git submodule add git://github.com/vim-scripts/taglist.git files/vim/bundle/taglist
 " git submodule add git://github.com/scrooloose/syntastic.git files/vim/bundle/syntastic
 " git submodule add git://github.com/davidhalter/jedi-vim.git files/vim/bundle/jedi-vim
 " git submodule add git://github.com/xolox/vim-session.git files/vim/bundle/vim-session
@@ -146,6 +147,7 @@ set nobackup
 
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.js set filetype=javascript.javascript-jquery
+au BufNewFile,BufRead *.jsonp set filetype=json
 au BufNewFile,BufRead *.html set filetype=htmldjango.html.javascript.javascript-jquery
 au BufNewFile,BufRead *.py set filetype=python.django
 autocmd FileType python set omnifunc=pythoncomplete#Complete
@@ -154,9 +156,12 @@ autocmd FileType python setlocal nowrap
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 " Coffeescript and Javascript I want at 2 space indentation
 autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2 tabstop=4
+autocmd FileType json setlocal softtabstop=2 shiftwidth=2 tabstop=4
+autocmd FileType jsonp  setlocal softtabstop=2 shiftwidth=2 tabstop=4
 autocmd FileType coffee setlocal softtabstop=2 shiftwidth=2 tabstop=4
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType less setlocal softtabstop=2 shiftwidth=2 tabstop=4
 autocmd FileType html,markdown,ctp set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType rst setlocal spell spelllang=en_gb
 

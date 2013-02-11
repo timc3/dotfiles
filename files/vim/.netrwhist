@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/tim/.vim'
 let g:netrw_dirhist_2='/Users/tim/Cantemo/cantemo/site-html2012'
 let g:netrw_dirhist_3='/Users/tim/Cantemo/portal/src'
 let g:netrw_dirhist_4='/Users/tim/Cantemo/cantemo'
 let g:netrw_dirhist_5='/Users/tim/.dotfiles/files/vim/bundle/syntastic/syntax_checkers/python'
 let g:netrw_dirhist_6='/Users/tim/Cantemo/ctools/code'
+let g:netrw_dirhist_7='/Volumes/MacHD2/Documents/Projects/backtree/examples'
