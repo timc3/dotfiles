@@ -47,7 +47,7 @@ filetype on
 syntax on
 
 " Ignore these files
-set wildignore=*.swp,*.bak,*.pyc
+set wildignore=*.swp,*.bak,*.pyc,*.so,*.swp,*.zip
 let NERDTreeIgnore = ['\.pyc$']
 
 " Set to auto read when a file is changed from the outside
@@ -206,3 +206,13 @@ endif
 
 set tags=./tags,$VIRTUAL_ENV/tags;/
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"" ctrlp
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$'
+  \ }
+let g:ctrlp_max_files=20000
+let g:ctrlp_max_height=20
