@@ -96,9 +96,19 @@ set tw=0
 "imap <left> <nop>
 "imap <right> <nop>
 
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline=
+set statusline+=%-3.3n\
+set statusline=%F
+set statusline+=%h%m%w 
+set statusline+=%#error#
+set statusline+=%#warningmsg#
+set statusline+=%r
+set statusline+=%* 
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+set statusline+=%=
+set statusline+=%c,
+set statusline+=%l/%L
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -150,6 +160,8 @@ au BufNewFile,BufRead *.js set filetype=javascript.javascript-jquery
 au BufNewFile,BufRead *.jsonp set filetype=json
 au BufNewFile,BufRead *.html set filetype=htmldjango.html.javascript.javascript-jquery
 au BufNewFile,BufRead *.py set filetype=python.django
+au BufRead,BufNewFile *.go set filetype=go
+autocmd FileType go autocmd BufWritePre <buffer> 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 " No wrapping for python
 autocmd FileType python setlocal nowrap
@@ -165,7 +177,12 @@ autocmd FileType less setlocal softtabstop=2 shiftwidth=2 tabstop=4
 autocmd FileType html,markdown,ctp set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType rst setlocal spell spelllang=en_gb
 
-" let g:syntastic_python_checker = 'pyflakes'
+let g:syntastic_python_checker = 'pylint'
+let g:syntastic_pythondjango_checker = 'pylint'
+let g:syntastic_python_pylint_args = '--disable=C0301'
+let g:syntastic_pythondjango_pylint_args = '--disable=C0301'
+
+
 let g:syntastic_mode_map = {'mode': 'active', 
             \ 'active_filetypes': [], 
             \ 'passive_filetypes': ['html'] }
