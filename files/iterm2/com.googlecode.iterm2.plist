@@ -4,7 +4,11 @@
 <dict>
 	<key>AFRStrokeThickness</key>
 	<real>-0.10000000149011612</real>
+	<key>AdjustWindowForFontSizeChange</key>
+	<true/>
 	<key>AdvancedFontRendering</key>
+	<false/>
+	<key>AllowClipboardAccess</key>
 	<false/>
 	<key>AnimateDimming</key>
 	<false/>
@@ -398,6 +402,10 @@
 	<string>1</string>
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
+	<key>NSFileViewer</key>
+	<string>com.cocoatech.PathFinder</string>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 7</string>
 	<key>NSFontPanelPreviewHeight</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
@@ -406,6 +414,8 @@
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
+	<key>NSScrollAnimationEnabled</key>
+	<false/>
 	<key>NSTableView Columns KeyBingingTable</key>
 	<array>
 		<data>
@@ -538,7 +548,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1091 77 443 270 0 0 1600 1178 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>390 365 924 485 0 0 1600 1178 </string>
+	<string>334 535 924 485 0 0 1600 1178 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>608 787 384 129 0 0 1600 1178 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Monaco</key>
@@ -628,7 +638,7 @@
 				<key>Green Component</key>
 				<real>0.95794391632080078</real>
 				<key>Red Component</key>
-				<real>0.98943418264389038</real>
+				<real>1</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
@@ -644,9 +654,9 @@
 				<key>Blue Component</key>
 				<real>0.023484811186790466</real>
 				<key>Green Component</key>
-				<real>0.46751424670219421</real>
+				<real>0.59172558784484863</real>
 				<key>Red Component</key>
-				<real>0.64746475219726562</real>
+				<real>0.39230725169181824</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
@@ -682,7 +692,7 @@
 				<key>Green Component</key>
 				<real>0.89001238346099854</real>
 				<key>Red Component</key>
-				<real>0.91611063480377197</real>
+				<real>0.92580974102020264</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -1034,7 +1044,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.0</real>
+			<real>0.15195313096046448</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -1068,7 +1078,7 @@
 				<key>Green Component</key>
 				<real>0.56485837697982788</real>
 				<key>Red Component</key>
-				<real>0.50599193572998047</real>
+				<real>0.53909099102020264</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
@@ -2539,6 +2549,8 @@
 			<string>/Users/tim</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>NotFirstRun</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -2609,7 +2621,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2012-11-21T20:30:38Z</date>
+	<date>2013-05-07T07:29:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2670,6 +2682,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20120203</string>
+	<string>1.0.0.20130319</string>
 </dict>
 </plist>
