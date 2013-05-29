@@ -11,7 +11,7 @@
 " git submodule add git://github.com/altercation/vim-colors-solarized.git files/vim/bundle/vim-colors-solarized
 " git submodule add git://github.com/tomtom/tlib_vim.git files/vim/bundle/tlib_vim
 " git submodule add git://github.com/MarcWeber/vim-addon-mw-utils.git files/vim/bundle/vim-addon-mw-utils
-" git submodule add git://github.com/honza/snipmate-snippets.git files/vim/bundle/snipmate-snippets
+" git submodule add git://github.com/honza/vim-snippets.git files/vim/bundle/vim-snippets
 " git submodule add git://github.com/garbas/vim-snipmate.git files/vim/bundle/vim-snipmate
 " git submodule add git://github.com/jmcantrell/vim-virtualenv.git files/vim/bundle/vim-virtualenv 
 " git submodule add git://github.com/majutsushi/tagbar.git files/vim/bundle/tagbar
