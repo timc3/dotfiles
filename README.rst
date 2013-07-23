@@ -19,8 +19,11 @@ To setup, run the following from a terminal::
 
     mkdir ~/.dotfiles
     git clone git://github.com/timc3/dotfiles.git .dotfiles
+    git submodule init
+    git submodule update
     cd .dotfiles/files/
     ruby install.rb
+    git submodule foreach git pull
 
 This should symlink the files into your home directory and then you can use them.
 
