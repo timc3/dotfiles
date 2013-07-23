@@ -29,7 +29,7 @@ This should symlink the files into your home directory and then you can use them
 
 There is also a requirements.pip for installing requirements. Pip is added so we can easily do an upgrade.::
 
-    pip install -r requirements.pip
+    sudo pip install -r requirements.pip
 
 iTerm2
 ------
