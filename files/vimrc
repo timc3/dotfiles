@@ -177,17 +177,21 @@ autocmd FileType less setlocal softtabstop=2 shiftwidth=2 tabstop=4
 autocmd FileType html,markdown,ctp set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType rst setlocal spell spelllang=en_gb
 
-let g:syntastic_python_checker = 'pylint'
-let g:syntastic_pythondjango_checker = 'pylint'
-let g:syntastic_python_pylint_args = '--disable=C0301'
-let g:syntastic_pythondjango_pylint_args = '--disable=C0301'
+let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_pythondjango_checkers = ['pyflakes']
+" let g:syntastic_pythoncheckers = ['pylint']
+" let g:syntastic_pythondjango_checkers = ['pylint']
+" let g:syntastic_python_pylint_args = '--disable=C0301'
+" let g:syntastic_pythondjango_pylint_args = '--disable=C0301'
 
 
 let g:syntastic_mode_map = {'mode': 'active', 
             \ 'active_filetypes': [], 
             \ 'passive_filetypes': ['html'] }
         
-let g:jedi#related_names_command = "<leader>r"
+let g:jedi#usages_command = "<leader>r"
+let g:jedi#auto_initialization = 1 
+let g:jedi#goto_assignments_command = "<leader>a"
 
 " NERDTree setup
 " Fix the width of NERDTree.
