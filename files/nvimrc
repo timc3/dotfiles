@@ -2,26 +2,27 @@
 " project.vim is installed
 " Submodules used:
 "
-" git submodule add git://github.com/tpope/vim-fugitive.git files/vim/bundle/fugitive.vim
-" git submodule add git://github.com/sjl/gundo.vim files/vim/bundle/gundo.vim
-" git submodule add git://github.com/scrooloose/nerdtree.git files/vim/bundle/nerdtree.vim 
-" git submodule add git://github.com/kien/ctrlp.vim.git files/vim/bundle/ctrlp.vim
-" git submodule add http://github.com/bingaman/vim-sparkup.git files/vim/bundle/vim-sparkup    
-" git submodule add https://github.com/groenewege/vim-less.git files/vim/bundle/vim-less 
-" git submodule add git://github.com/altercation/vim-colors-solarized.git files/vim/bundle/vim-colors-solarized
-" git submodule add git://github.com/tomtom/tlib_vim.git files/vim/bundle/tlib_vim
-" git submodule add git://github.com/MarcWeber/vim-addon-mw-utils.git files/vim/bundle/vim-addon-mw-utils
-" git submodule add git://github.com/honza/vim-snippets.git files/vim/bundle/vim-snippets
-" git submodule add git://github.com/garbas/vim-snipmate.git files/vim/bundle/vim-snipmate
-" git submodule add git://github.com/jmcantrell/vim-virtualenv.git files/vim/bundle/vim-virtualenv 
-" git submodule add git://github.com/majutsushi/tagbar.git files/vim/bundle/tagbar
-" git submodule add git://github.com/vim-scripts/taglist.git files/vim/bundle/taglist
-" git submodule add git://github.com/scrooloose/syntastic.git files/vim/bundle/syntastic
-" git submodule add git://github.com/davidhalter/jedi-vim.git files/vim/bundle/jedi-vim
-" git submodule add git://github.com/xolox/vim-session.git files/vim/bundle/vim-session
+" git submodule add git://github.com/gmarik/Vundle.vim.git files/nvim/bundle/Vundle.vim
 "
-" Start Pathogen
-call pathogen#infect()
+set nocompatible
+filetype off 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.nvim/bundle/Vundle.vim
+
+
+" alternatively, pass a path where Vundle should install plugins
+call vundle#begin('~/nvim/bundle/')
+"
+" " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'bingaman/vim-sparkup.git'
+Plugin 'kien/ctrlp.vim.git'
+Plugin 'altercation/vim-colors-solarized.git'
+
+call vundle#end() 
+filetype plugin indent on 
 
 " History is 1000 lines
 set history=1000
