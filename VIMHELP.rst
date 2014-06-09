@@ -1,7 +1,7 @@
-This is a self made help file
+This is a self made help file.
 
-Help!!
-------
+Consider using NeoVim now instead of mvim or normal vim. A complete refactor of the shit that vim is today is the correct way to go along with the ability for more than one person to work on the code base.
+
 
 CTRLP
 ------

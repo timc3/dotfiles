@@ -552,11 +552,13 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>-1634 1661 605 485 -1770 863 1200 1578 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1098 804 384 129 0 0 2560 1418 </string>
+	<string>528 562 384 129 0 0 1440 878 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>-273 1734 592 584 -503 900 2560 1418 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Monaco</key>
 	<string>387 691 260 88 0 0 1600 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 878 </string>
+	<string>19 153 1012 698 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>229 96 585 451 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_0E905248-8510-47EA-8F3C-DF2A7905AF96</key>
@@ -2633,7 +2635,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-04-25T08:45:15Z</date>
+	<date>2014-05-26T08:02:55Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2667,7 +2669,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1309263616</real>
+	<real>1401091328</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2679,7 +2681,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Lucida Grande UI</string>
 	<key>Window Arrangements</key>
 	<dict/>
 	<key>WindowNumber</key>

@@ -1,0 +1,222 @@
+" Tim Child's Vim setup
+" project.vim is installed
+" Submodules used:
+"
+" git submodule add git://github.com/tpope/vim-fugitive.git files/vim/bundle/fugitive.vim
+" git submodule add git://github.com/sjl/gundo.vim files/vim/bundle/gundo.vim
+" git submodule add git://github.com/scrooloose/nerdtree.git files/vim/bundle/nerdtree.vim 
+" git submodule add git://github.com/kien/ctrlp.vim.git files/vim/bundle/ctrlp.vim
+" git submodule add http://github.com/bingaman/vim-sparkup.git files/vim/bundle/vim-sparkup    
+" git submodule add https://github.com/groenewege/vim-less.git files/vim/bundle/vim-less 
+" git submodule add git://github.com/altercation/vim-colors-solarized.git files/vim/bundle/vim-colors-solarized
+" git submodule add git://github.com/tomtom/tlib_vim.git files/vim/bundle/tlib_vim
+" git submodule add git://github.com/MarcWeber/vim-addon-mw-utils.git files/vim/bundle/vim-addon-mw-utils
+" git submodule add git://github.com/honza/vim-snippets.git files/vim/bundle/vim-snippets
+" git submodule add git://github.com/garbas/vim-snipmate.git files/vim/bundle/vim-snipmate
+" git submodule add git://github.com/jmcantrell/vim-virtualenv.git files/vim/bundle/vim-virtualenv 
+" git submodule add git://github.com/majutsushi/tagbar.git files/vim/bundle/tagbar
+" git submodule add git://github.com/vim-scripts/taglist.git files/vim/bundle/taglist
+" git submodule add git://github.com/scrooloose/syntastic.git files/vim/bundle/syntastic
+" git submodule add git://github.com/davidhalter/jedi-vim.git files/vim/bundle/jedi-vim
+" git submodule add git://github.com/xolox/vim-session.git files/vim/bundle/vim-session
+"
+" Start Pathogen
+call pathogen#infect()
+
+" History is 1000 lines
+set history=1000
+
+" Set tabs at 4 spaces
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+" use spaces instead of tabs
+set expandtab
+set autoindent
+set smartindent
+set smarttab
+
+" Set the leader character to something sensible
+let mapleader = ","
+let g:mapleader = ","
+
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
+filetype on
+syntax on
+
+" Ignore these files
+set wildignore=*.swp,*.bak,*.pyc,*.so,*.swp,*.zip
+let NERDTreeIgnore = ['\.pyc$']
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" VIM UI
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Look and feel
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors = 256
+
+" Set 7 lines to the cursor - when moving vertically using j/k so there is
+" always something above or below
+set so=7
+
+" Turn on the WiLd menu for buffer exploration ( :b <Tab> ) and explorer ( :e <Tab> )
+set wildmenu
+
+" Set the numbers always on
+set nu
+
+" Always show the rules
+set ruler
+
+" Show matching brackets when text indicator is over them
+set showmatch
+
+" How many tenths of a second to blink when matching brackets
+set mat=2
+
+" Use visualbell instead of the nasty sound
+set visualbell
+set textwidth=0
+set wrapmargin=0
+set tw=0
+
+" disable arrow keys
+"map <up> <nop>
+"map <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
+"imap <up> <nop>
+"imap <down> <nop>
+"imap <left> <nop>
+"imap <right> <nop>
+
+set statusline=
+set statusline+=%-3.3n\
+set statusline=%F
+set statusline+=%h%m%w 
+set statusline+=%#error#
+set statusline+=%#warningmsg#
+set statusline+=%r
+set statusline+=%* 
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+set statusline+=%=
+set statusline+=%c,
+set statusline+=%l/%L
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Misc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remove the Windows ^M - when the encodings gets messed up
+noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
+" Toggle paste mode on and off
+map <leader>pp :setlocal paste!<cr>
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+" Remember info about open buffers on close
+set viminfo^=%
+
+set foldmethod=indent
+set foldlevelstart=20
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colors
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" set extra options when running in GUI mode
+if has("gui_running")
+    set guioptions-=T
+    set guioptions+=e
+    set t_Co=256
+    set guitablabel=%M\ %t
+endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Files
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Swap files create in temporary directories instead of the local directory
+" set backup 
+" set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
+" set backupskip=/tmp/*,/private/tmp/* 
+" set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 
+" set writebackup
+set noswapfile
+set nobackup
+
+au BufNewFile,BufRead *.less set filetype=less
+au BufNewFile,BufRead *.js set filetype=javascript.javascript-jquery
+au BufNewFile,BufRead *.jsonp set filetype=json
+au BufNewFile,BufRead *.html set filetype=htmldjango.html.javascript.javascript-jquery
+au BufNewFile,BufRead *.py set filetype=python.django
+au BufRead,BufNewFile *.go set filetype=go
+autocmd FileType go autocmd BufWritePre <buffer> 
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+" No wrapping for python
+autocmd FileType python setlocal nowrap
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" Coffeescript and Javascript I want at 2 space indentation
+autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2 tabstop=4
+autocmd FileType json setlocal softtabstop=2 shiftwidth=2 tabstop=4
+autocmd FileType jsonp  setlocal softtabstop=2 shiftwidth=2 tabstop=4
+autocmd FileType coffee setlocal softtabstop=2 shiftwidth=2 tabstop=4
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType less setlocal softtabstop=2 shiftwidth=2 tabstop=4
+autocmd FileType html,markdown,ctp set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType rst setlocal spell spelllang=en_gb
+
+let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_pythondjango_checkers = ['pyflakes']
+" let g:syntastic_pythoncheckers = ['pylint']
+" let g:syntastic_pythondjango_checkers = ['pylint']
+" let g:syntastic_python_pylint_args = '--disable=C0301'
+" let g:syntastic_pythondjango_pylint_args = '--disable=C0301'
+
+
+let g:syntastic_mode_map = {'mode': 'active', 
+            \ 'active_filetypes': [], 
+            \ 'passive_filetypes': ['html'] }
+        
+let g:jedi#usages_command = "<leader>r"
+let g:jedi#auto_initialization = 1 
+let g:jedi#goto_assignments_command = "<leader>a"
+
+" NERDTree setup
+" Fix the width of NERDTree.
+" Map NERDTreeToggle to convenient key
+let g:NERDTreeWinSize = 48 
+nmap <leader>n :NERDTreeToggle<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"" ctags
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+if filereadable(expand("/opt/homebrew/bin//ctags")) 
+    let Tlist_Ctags_Cmd=expand("/opt/homebrew/bin//ctags")
+    let g:tagbar_ctags_bin=expand("/opt/homebrew/bin//ctags")
+endif
+
+set tags=./tags,$VIRTUAL_ENV/tags;/
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"" ctrlp
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$'
+  \ }
+let g:ctrlp_max_files=20000
+let g:ctrlp_max_height=20

@@ -38,6 +38,14 @@ To setup iterm2, open the preferences, check "Load preferences from a user-defin
 
     /Users/tim/.iterm2/
 
+
+NeoVim
+------
+
+NeoVim is the new hotness. I am going to replace certain aspects of my vim setup, such as using Vundle.
+
+Install neovim with brew..
+
 VIM
 ----
 

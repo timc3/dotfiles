@@ -52,3 +52,9 @@
 [submodule "files/vim/bundle/vim-snippets"]
 	path = files/vim/bundle/vim-snippets
 	url = git://github.com/honza/vim-snippets.git
+[submodule "files/files/nvim/bundle/Vundle.vim"]
+	path = files/files/nvim/bundle/Vundle.vim
+	url = git://github.com/gmarik/Vundle.vim.git
+[submodule "files/nvim/bundle/Vundle.vim"]
+	path = files/nvim/bundle/Vundle.vim
+	url = git://github.com/gmarik/Vundle.vim.git
