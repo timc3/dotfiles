@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'bingaman/vim-sparkup.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'scrooloose/syntastic.git'
 
 call vundle#end() 
 filetype plugin indent on 
