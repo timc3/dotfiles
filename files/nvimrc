@@ -22,6 +22,12 @@ Plugin 'kien/ctrlp.vim.git'
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'scrooloose/syntastic.git'
 
+" Support for Snippets. Once I have python I should use SirVer/ultisnips
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+
 call vundle#end() 
 filetype plugin indent on 
 
@@ -37,6 +43,7 @@ set expandtab
 set autoindent
 set smartindent
 set smarttab
+set backspace=2
 
 " Set the leader character to something sensible
 let mapleader = ","
@@ -222,3 +229,19 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_max_files=20000
 let g:ctrlp_max_height=20
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Paste from system clipboard OSX for neovim.
+"" https://github.com/neovim/neovim/issues/583#issuecomment-40942281
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" function! ClipboardYank()
+"  call system('pbcopy', @@)
+"endfunction
+"function! ClipboardPaste()
+"  let @@ = system('pbpaste')
+"endfunction
+
+"vnoremap <silent> y y:call ClipboardYank()<cr>
+"vnoremap <silent> d d:call ClipboardYank()<cr>
+"nnoremap <silent> p :call ClipboardPaste()<cr>p
+

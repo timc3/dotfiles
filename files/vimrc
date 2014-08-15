@@ -53,6 +53,10 @@ let NERDTreeIgnore = ['\.pyc$']
 " Set to auto read when a file is changed from the outside
 set autoread
 
+
+" Stop scanning allsorts of files:
+set complete-=i
+
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " VIM UI
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -219,4 +223,5 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.exe$\|\.so$\|\.dat$'
   \ }
 let g:ctrlp_max_files=20000
-let g:ctrlp_max_height=20
+let g:ctrlp_max_height=25
+let g:ctrlp_working_path_mode = 'c'
