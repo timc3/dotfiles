@@ -10,6 +10,8 @@
 	<false/>
 	<key>AllowClipboardAccess</key>
 	<false/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -564,15 +566,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1091 77 443 270 0 0 1600 1178 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>258 137 924 485 0 0 1440 878 </string>
+	<string>1018 785 924 485 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>528 562 384 129 0 0 1440 878 </string>
+	<string>2288 1127 384 129 1200 160 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-273 1734 592 584 -503 900 2560 1418 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Monaco</key>
 	<string>387 691 260 88 0 0 1600 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-11 12 1438 866 0 0 1440 878 </string>
+	<string>1 9 1402 860 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>229 96 585 451 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_0E905248-8510-47EA-8F3C-DF2A7905AF96</key>
@@ -583,7 +585,7 @@
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
-			<true/>
+			<false/>
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -658,7 +660,7 @@
 				<key>Green Component</key>
 				<real>0.95794391632080078</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.98943418264389038</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
@@ -674,9 +676,9 @@
 				<key>Blue Component</key>
 				<real>0.023484811186790466</real>
 				<key>Green Component</key>
-				<real>0.59172558784484863</real>
+				<real>0.46751424670219421</real>
 				<key>Red Component</key>
-				<real>0.39230725169181824</real>
+				<real>0.64746475219726562</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
@@ -712,7 +714,7 @@
 				<key>Green Component</key>
 				<real>0.89001238346099854</real>
 				<key>Red Component</key>
-				<real>0.92580974102020264</real>
+				<real>0.91611063480377197</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -1088,7 +1090,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>4000</integer>
+			<integer>10000</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
@@ -1100,7 +1102,7 @@
 				<key>Green Component</key>
 				<real>0.56485837697982788</real>
 				<key>Red Component</key>
-				<real>0.53909099102020264</real>
+				<real>0.50599193572998047</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
@@ -1228,7 +1230,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.094089776277542114</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1253,6 +1255,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>Allow Title Reporting</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1412,6 +1416,8 @@
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
+			<key>Background Image Is Tiled</key>
+			<false/>
 			<key>Background Image Location</key>
 			<string></string>
 			<key>Blend</key>
@@ -1904,6 +1910,10 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<false/>
+			<key>Use Canonical Parser</key>
+			<false/>
+			<key>Use Italic Font</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -1916,6 +1926,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>Allow Title Reporting</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -2075,6 +2087,8 @@
 				<key>Red Component</key>
 				<real>0.12156862765550613</real>
 			</dict>
+			<key>Background Image Is Tiled</key>
+			<false/>
 			<key>Background Image Location</key>
 			<string></string>
 			<key>Blend</key>
@@ -2565,6 +2579,10 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<false/>
+			<key>Use Canonical Parser</key>
+			<false/>
+			<key>Use Italic Font</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -2577,6 +2595,10 @@
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453977111.580329</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>472325129.76220298</real>
 	<key>NotFirstRun</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -2645,11 +2667,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-08-04T07:55:40Z</date>
+	<date>2015-12-20T22:29:06Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2709,6 +2731,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0</string>
+	<string>2.1.4</string>
 </dict>
 </plist>
